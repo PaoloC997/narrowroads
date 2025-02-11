@@ -1,13 +1,27 @@
 <template>
-    <div>
-      <h1>Projects Page</h1>
-      <p>This is the projects page.</p>
+  <div class="ps-main">
+    <div v-for="project in projectData" :key="project.id">
+      <Project 
+      :projectTitle="project.projectTitle"
+      :videoText="project.videoText"
+      :audioText="project.audioText"
+      :imageSrc="project.imageSrc"
+      />
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'About'
-  };
-  </script>
-  
+  </div>
+</template>
+
+<script>
+import Project from './Project.vue';
+import projectInfo from '@/data/textos';
+
+export default {
+  name: 'Projects',
+  components: { Project },
+  data() {
+    return {
+      projectData: projectInfo
+    };
+  }
+};
+</script>
