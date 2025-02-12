@@ -36,7 +36,7 @@ export default {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .p-title{
