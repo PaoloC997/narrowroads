@@ -1,15 +1,16 @@
 <template>
   <div class="p-main">
-    <h2 class="p-title">{{ projectTitle }}</h2>
+    <h2 class="p-title thin">{{ projectTitle }}</h2>
     <img :src="`/assets/${imageSrc}`" class="p-image" />
-    <div class="p-text-container">
+    <div class="p-text-container light">
       <div class="p-flex-left">
+        <p class="p-st">FIXED REPRODUCTION</p>
+        <hr class="bar" />
         <p class="p-p">{{ videoText }}</p>
         <p class="p-p">{{ audioText }}</p>
       </div>
       <div class="p-flex-right">
         <img :src="`/assets/${thumbSrc}`" class="p-thumb" />
-
       </div>
     </div>
   </div>
@@ -31,7 +32,7 @@ export default {
 .p-main {
   display: flex;
   flex-direction: column;
-  height: 150vh;
+  max-height: 160vh;
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +40,9 @@ export default {
 }
 
 .p-title{
-    font-size: 5rem;
+    font-size: 8.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     text-transform: uppercase;
     color: gray;
 }
@@ -49,14 +52,18 @@ export default {
   flex-direction: row;
   height: 50vh;
   padding-top: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .p-flex-left {
   flex: 1;
+  max-width: 40vw;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   align-items: start;
+  font-size: 2.5rem;
 }
 
 .p-flex-right {
@@ -68,11 +75,27 @@ export default {
 
 .p-p {
   color: black;
-  font-size: 1.5rem;
+  margin-bottom:1rem;
+  padding-bottom: 0.2rem;
+}
+
+.p-st {
+  color: black;
+  margin-bottom:0px;
+  color:gray;
+
 }
 
 .p-thumb {
     object-fit: cover;
-    width:20vw;
+    width:28vw;
+    margin-top: 3rem;
+}
+
+.bar {
+  color: gray;
+  width:20vw;
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
 </style>

@@ -51,7 +51,7 @@ const projectInfo = [
     },
     {
         id: 7,
-        projectTitle: "VR App - TIMELESS / FRAMELESS",
+        projectTitle: "VR App",
         videoText: "Format: Windows PC VR executable\nVideo: Virtual Reality",
         audioText: "Audio: Real-time binaural decoding",
         imageSrc: "project7.webp",
@@ -59,7 +59,7 @@ const projectInfo = [
     },
     {
         id: 8,
-        projectTitle: "Book Publication - TIMELESS / FRAMELESS",
+        projectTitle: "Book Publication",
         videoText: "Format: Limited Edition (100 units, created for the Barcelona Premiere)",
         audioText: "Language: Catalan\nPages: 40\n+ Download PDF",
         imageSrc: "project8.webp",
@@ -67,7 +67,7 @@ const projectInfo = [
     },
     {
         id: 9,
-        projectTitle: "Music Album - TIMELESS / FRAMELESS",
+        projectTitle: "Music Album",
         videoText: "Format: Digital Audio",
         audioText: "Composer: Hoarfrost\nAlbum: Waka\nListen here",
         imageSrc: "project9.webp",
@@ -75,7 +75,7 @@ const projectInfo = [
     },
     {
         id: 10,
-        projectTitle: "Art Installation - TIMELESS / FRAMELESS",
+        projectTitle: "Art Installation",
         videoText: "Format: Digital Audio",
         audioText: "Audio: Developed in agreement with local curators and adapted to the space’s unique characteristics",
         imageSrc: "project10.webp",

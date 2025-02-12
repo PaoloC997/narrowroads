@@ -10,10 +10,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
   <style>
+    /* GT America Compressed Thin */
+    @font-face {
+      font-family: 'GT America Compressed Thin';
+      src: url('/fonts/GT-America-Compressed-Thin.woff') format('woff'),
+        url('/fonts/GT-America-Compressed-Thin.otf') format('opentype'),
+        url('/fonts/GT-America-Compressed-Thin.ttf') format('truetype');
+    }
+
+    /* GT America Compressed Light */
+    @font-face {
+      font-family: 'GT America Compressed Light';
+      src: url('/fonts/GT-America-Compressed-Light.woff') format('woff'),
+        url('/fonts/GT-America-Compressed-Light.otf') format('opentype'),
+        url('/fonts/GT-America-Compressed-Light.ttf') format('truetype');
+    }
+
+    .thin {
+      font-family: "GT America Compressed Thin", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .light {
+      font-family: "GT America Compressed Thin", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body,
     html {
       margin: 0;
@@ -26,6 +57,12 @@
       font-weight: normal;
       font-style: normal;
     }
+
+    /* {
+      box-sizing: border-box;
+      border: 1px solid red;
+    }
+      */
   </style>
 </head>
 
