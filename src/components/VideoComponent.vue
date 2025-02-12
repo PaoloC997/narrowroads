@@ -1,22 +1,22 @@
 <template>
     <div class="parent">
         <div class="bg"></div>
-        <img src="../assets/logo4.webp" class="islands" />
-        <video src="../assets/Portada_01.mp4" autoplay playsinline muted loop></video>
+        <img src="../../public/assets/logo4.webp" class="islands" />
+        <video src="../../public/assets/Portada_01.mp4" autoplay playsinline muted loop></video>
         <div class="text-container grotesk">
             <p class="text">"Do not seek to follow in the footsteps of the wise;
                 seek what they sought." <br><span class="italic"> <em>- Matsuo Basho</em></span>
             </p>
         </div>
-        <img src="../assets/logobig.webp" class="logo-big" />
+        <img src="../../public/assets/logobig.webp" class="logo-big" />
         <div class="logos-container">
-            <div class="flex-left">
-                <img class="logo-sm" src="../assets/ah2.webp"/>
-                <img class="logo-sm2"  src="../assets/generalitat.webp"/>
-                <img class="logo-sm"  src="../assets/logo2.webp"/>
-                <img class="logo-sm3"  src="../assets/logo5.webp"/>
+            <div class="h-flex-left">
+                <img class="logo-sm" src="../../public/assets/ah2.webp"/>
+                <img class="logo-sm"  src="../../public/assets/generalitat.webp"/>
+                <img class="logo-sm"  src="../../public/assets/logo2.webp"/>
+                <img class="logo-sm"  src="../../public/assets/logo5.webp"/>
             </div>
-            <div class="flex-right">
+            <div class="h-flex-right">
                 texty text
             </div>
 
@@ -75,6 +75,7 @@ video {
     left: 15%;
     right: 15%;
     z-index: 101;
+    width:5vw;
 }
 
 .text-container{
@@ -112,7 +113,7 @@ video {
     margin-right: 2rem;
 }
 
-.flex-left{
+.h-flex-left{
     display: flex;
     flex:1;
     flex-direction: row;
@@ -120,24 +121,17 @@ video {
     align-items: center;
 }
 
-.flex-right{
+.h-flex-right{
     display: flex;
   
     flex:1;
     flex-direction: row;
 }
 
-.logo-sm{
-    height:5vh;
+.h-logo-sm{
+    width:3vh;
 }
 
-.logo-sm2{
-    height:5vh;
-}
 
-.logo-sm3{
-    height:8vh;
-    margin-bottom: 1.5rem;
-}
 
 </style>

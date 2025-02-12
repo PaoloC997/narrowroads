@@ -6,6 +6,7 @@
       :videoText="project.videoText"
       :audioText="project.audioText"
       :imageSrc="project.imageSrc"
+      :thumbSrc="project.thumbSrc"
       />
     </div>
   </div>
