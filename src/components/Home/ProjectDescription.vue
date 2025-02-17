@@ -3,7 +3,7 @@
         <img class="d-image" src="../../../public/assets/d-image.webp" />
     </div>
     <div class="d-container">
-        <h2 class="d-title">THE PATH OF SOUND</h2>
+        <h2 class="d-title thin">THE PATH OF SOUND</h2>
         <div class="d-flex">
             <div class="d-flex-left">
                 <p class="grotesk"> When I enter the room, the first image that greets me is Ginebra Raventós, Ɇ₥łⱠłØ ₥₳ⱤӾ, Joan
@@ -12,27 +12,27 @@
                     displaying
                     black-and-white moving images. In front of them, an array of devices and cables, each having its
                     place and
-                    function.
-                    The ceremony of sound has begun.
+                    function.<br>
+                    The ceremony of sound has begun.<br>
                     In Japan, they follow the concept of Do, derived from Tao: the path, the protocol, the instructions
                     to
                     master
-                    a technique.
+                    a technique.<br>
                     Acoustic Heritage Collectives takes the path of sound
                     and image, pressing the right keys with studied precision
                     in order to introduce us to the journey that led them to follow the steps of another path: the one
                     taken by
                     Matsuo Basho to reconnect with the most beautiful haikus and the places where they were originally
-                    written.
+                    written.<br>
                     The initial cultural shock, the contrast between expectations and what was found upon landing in the
                     city
                     of Tokyo and its impact on the senses: the people, the signs, the advertisements, the jingles, will
                     be
-                    abruptly interrupted by the encounter with the lurking monster of the earthquake.
+                    abruptly interrupted by the encounter with the lurking monster of the earthquake.<br>
                     For Japan, in its fragility as an island, is always at the mercy of natural disasters. Tsunami is a
                     Japanese
                     word. Hiroshima and Nagasaki are two places that, despite their millennia-old etymology, evoke
-                    danger. And
+                    danger. <br>And
                     Godzilla is a Japanese monster, pop mythology at the dawn of the new gods of mass media.
                     But there is a journey within the journey: the impossibility of translation. Translating the haikus
                     from
@@ -42,7 +42,7 @@
                     Octavio Paz
                     and others embarked on this adventure, deconstructing the haikus to reassemble them into something
                     that
-                    could say the same.
+                    could say the same.<br>
                     The essence of the haiku is itself elusive: it only makes sense in its context. In the case of
                     haikus, the
                     poet and their feelings disappear in favor of the surroundings. The poetic voice emerges from the
@@ -53,9 +53,9 @@
                 </p>
             </div>
             <div class="d-flex-right">
-                <p>Narrow Backroads dissolves authorship into the collective and leaves the viewer to complete the
+                <h2 id="d-text-large" class="thin">Narrow Backroads dissolves authorship into the collective and leaves the viewer to complete the
                     journey with
-                    the sensations awakened.</p>
+                    the sensations awakened.</h2>
                 <p class="grotesk">Similarly, just as in haikus the poet's identity fades in favor of the landscape, being collective
                     compositions, it remains open for the reader to interpret and complete its meaning, Narrow Backroads
                     dissolves authorship into the collective and leaves the viewer to complete the journey with the
@@ -92,10 +92,11 @@ export default {
     margin: 5rem;
 }
 
-.i-title {
+.d-title {
     margin-bottom: 2rem;
     color: gray;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    
 }
 .d-flex {
     display: flex;
@@ -106,7 +107,8 @@ export default {
 
 .d-flex-left {
     flex: 1;
-    letter-spacing: 2px;
+    letter-spacing: 7%;
+    padding-right: 2rem;
 }
 
 .d-flex-left p , .d-flex-right p {
@@ -119,4 +121,15 @@ export default {
     flex: 1;
     letter-spacing: 2px;
 }
+
+#d-text-large{
+    font-size: 6.25rem!important;
+    line-height: 6rem;
+    font-weight: 500!important;
+    margin-top: 0;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
 </style>
