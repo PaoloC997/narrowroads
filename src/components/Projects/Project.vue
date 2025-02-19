@@ -1,6 +1,6 @@
 <template>
   <div class="p-main">
-    <h2 class="p-title thin">{{ projectTitle }}</h2>
+    <h2 class="p-title gray thin">{{ projectTitle }}</h2>
     <img :src="`/assets/${imageSrc}`" class="p-image" />
     <div class="p-text-container light">
       <div class="p-flex-left">
@@ -44,7 +44,7 @@ export default {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     text-transform: uppercase;
-    color: gray;
+    font-weight: 300;
 }
 
 .p-text-container {

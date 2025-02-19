@@ -5,6 +5,7 @@
     <ProjectDescription/>
     <ContactSection/>
     <CreditsSection />
+    <Footer />
   </div>
   
 </template>
@@ -15,6 +16,7 @@ import IntroSection from './IntroSection.vue';
 import ProjectDescription from './ProjectDescription.vue';
 import ContactSection from './ContactSection.vue';
 import CreditsSection from './CreditsSection.vue';
+import Footer from './Footer.vue';
 export default {
   name: 'Home',
   components: {
@@ -22,7 +24,8 @@ export default {
     IntroSection,
     ProjectDescription,
     ContactSection,
-    CreditsSection
+    CreditsSection,
+    Footer
   }
 };
 </script>
