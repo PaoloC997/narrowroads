@@ -1,5 +1,4 @@
 <template>
-
     <div class="i-main">
         <div class="i-flex-left">
             <h2 class="i-title thin">SYNOPSYS</h2>
@@ -51,6 +50,9 @@ export default {
     width: 100vw;
     display: flex;
     flex-direction: row;
+    margin-bottom: 5rem;
+    padding-bottom: 10rem;
+    border-bottom: 1px solid #818181;
 }
 
 .i-flex-left {

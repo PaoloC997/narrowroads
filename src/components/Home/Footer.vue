@@ -31,18 +31,19 @@ export default {
     flex-direction: row;
     text-transform: uppercase;
     font-size: 2.5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    border-top: 1px solid #818181;
 }
 
 .f-flex-left {
     display: flex;
     flex: 1;
+    margin-left: 5rem;
 }
 
 .f-flex-right {
     display: flex;
     flex: 1;
+    margin-right: 5rem;
 }
 
 .flex-sm {

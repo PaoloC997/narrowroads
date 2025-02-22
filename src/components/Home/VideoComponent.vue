@@ -1,7 +1,5 @@
 <template>
     <div class="parent">
-        <img class="logo" src="../../../public/assets/ah2.webp" />
-        <div class="bg"></div>
         <img src="../../../public/assets/logo4.webp" class="islands" />
         <video src="../../../public/assets/Portada_01.mp4" autoplay playsinline muted loop></video>
         <div class="h-text-container grotesk">
@@ -12,13 +10,14 @@
         <img src="../../../public/assets/logobig.webp" class="logo-big" />
         <div class="logos-container">
             <div class="h-flex-left">
-                <img class="h-logo-sm" src="../../../public/assets/generalitat.webp" />
-                <img class="h-logo-sm2" src="../../../public/assets/logo2.webp" />
-                <img class="h-logo-sm" src="../../../public/assets/logo5.webp" />
+                <img class="h-logo-sm2" src="../../../public/assets/ah2.webp" />
+                <img id="logo-small" class="h-logo-sm" src="../../../public/assets/generalitat.webp" />
+                <img class="h-logo-sm" src="../../../public/assets/logo2.webp" />
+                <img id="logo-small2" class="h-logo-sm2" src="../../../public/assets/logo5.webp" />
             </div>
             <div class="h-flex-right">
                 <p class="h-sub light">
-                   <span class="red">A cinematic poem by :</span> 
+                   <span class="red">A cinematic poem by: </span> 
                     <span class="white">Ginebra raventos, emilio maRx, Joan lavandeira, Edgardo Goméz</span>
                 </p>
             </div>
@@ -45,11 +44,6 @@ export default {
     z-index: 1;
 }
 
-.bg {
-    background-color: blue;
-    height: 100vh;
-    z-index: 0;
-}
 
 video {
     height: 100vh;
@@ -58,7 +52,7 @@ video {
     z-index: 100;
     top: 0;
     position: absolute;
-    filter: brightness(85%);
+    filter: brightness(90%) hue-rotate(340deg);
 }
 
 .logo-big {
@@ -115,7 +109,7 @@ video {
     display: flex;
     flex-direction: row;
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     z-index: 105;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -126,19 +120,34 @@ video {
     display: flex;
     flex: 1;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+    width:50vw;
+    padding-left: 3rem;
 }
 
 .h-flex-right {
     display: flex;
     flex: 1;
     justify-content: center;
+    padding-right: 3rem;
     
 }
 
 .h-logo-sm {
-    width: 7vw;
+    width: 9vw;
+    transform: scale(1.6);
+    margin-left: 7rem;
+}
+
+.h-logo-sm2 {
+    width: 3vw;
+    transform: scale(1.6);
+}
+
+.h-logo-sm3 {
+    width: 9vw;
+   
 }
 
 .logo {
@@ -155,5 +164,14 @@ video {
 
 .white {
     color: white;
+}
+
+#logo-small {
+   transform: scale(1.6);
+}
+
+#logo-small2 {
+   margin-left: 7rem;
+   width:3rem;
 }
 </style>

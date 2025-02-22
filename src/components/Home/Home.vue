@@ -2,6 +2,7 @@
   <div>
     <VideoComponent />
     <IntroSection />
+    <FormatsSection/>
     <ProjectDescription/>
     <ContactSection/>
     <CreditsSection />
@@ -16,6 +17,7 @@ import IntroSection from './IntroSection.vue';
 import ProjectDescription from './ProjectDescription.vue';
 import ContactSection from './ContactSection.vue';
 import CreditsSection from './CreditsSection.vue';
+import FormatsSection from './FormatsSection.vue';
 import Footer from './Footer.vue';
 export default {
   name: 'Home',
@@ -23,6 +25,7 @@ export default {
     VideoComponent,
     IntroSection,
     ProjectDescription,
+    FormatsSection,
     ContactSection,
     CreditsSection,
     Footer

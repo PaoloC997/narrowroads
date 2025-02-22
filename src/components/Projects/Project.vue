@@ -4,16 +4,16 @@
     <img :src="`/assets/${imageSrc}`" class="p-image" />
     <div class="p-text-container light">
       <div class="p-flex-left">
-        <p class="p-st">FIXED REPRODUCTION</p>
+        <p class="p-st">{{ type }}</p>
         <hr class="bar" />
-        <p class="p-p">{{ videoText }}</p>
-        <p class="p-p">{{ audioText }}</p>
+        <p class="p-p"><span class="gray">AUDIO: </span>{{ videoText }}</p>
+        <p class="p-p"><span>VIDEO: </span>{{ audioText }}</p>
       </div>
-      <div class="p-flex-right">
-        <img :src="`/assets/${thumbSrc}`" class="p-thumb" />
+      <div v-if="thumbSrc !== ''" class="p-flex-right">
+        <img :id="id === 2 ? 'p-thumb-lg' : ''"  :src="`/assets/${thumbSrc}`" :class="id === 3 ? 'p-thumb-sm' : 'p-thumb'" />
+      </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -24,7 +24,9 @@ export default {
     videoText: String,
     audioText: String,
     imageSrc: String,
-    thumbSrc: String
+    thumbSrc: String,
+    id: Number,
+    type: String
   }
 };
 </script>
@@ -32,11 +34,12 @@ export default {
 .p-main {
   display: flex;
   flex-direction: column;
-  max-height: 160vh;
+  max-height: 170vh;
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #818181;
 }
 
 .p-title{
@@ -88,8 +91,18 @@ export default {
 
 .p-thumb {
     object-fit: cover;
-    width:28vw;
+    width:29vw;
     margin-top: 3rem;
+}
+
+.p-thumb-sm{
+    object-fit: cover;
+    width:20vw;
+    margin-top: 3rem;
+}
+
+#p-thumb-lg{
+    transform: scale(1.2);
 }
 
 .bar {
