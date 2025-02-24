@@ -4,10 +4,10 @@
             <h2 class="c-title light">CONTACT - BOOKING</h2>
             <p class="c-text">acousticheritagecollective@gmail.com</p>
             <p class="c-text"> acousticheritagecollective.org</p>
-            <p class="c-text">filmfreeway.com/AcousticHeritageCollective</p>   
+            <p class="c-text">filmfreeway.com/AcousticHeritageCollective</p>
         </div>
         <div class="c-flex-right">
-            <img class="c-logo" src="../../../public/assets/c-logo2.webp" />                            
+            <img class="c-logo" src="../../../public/assets/c-logo2.webp" />
         </div>
     </div>
 </template>
@@ -42,7 +42,7 @@ export default {
 .c-title {
     margin-bottom: 2rem;
     color: white;
-    font-size: 4.1662rem!important;
+    font-size: 4.1662rem !important;
     font-weight: 300;
 }
 
@@ -62,7 +62,20 @@ export default {
 .c-text {
     color: white;
     font-size: 1.8rem;
-    font-weight: lighter!important;
+    font-weight: lighter !important;
 }
 
+@media (max-width: 768px) {
+
+    .c-main {
+        height: auto;
+        flex-direction: column;
+       
+    }
+
+    .c-flex-left {
+    margin-left: 3rem;
+}
+
+}
 </style>

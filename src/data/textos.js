@@ -2,8 +2,17 @@ const projectInfo = [
     {
         id: 1,
         projectTitle: "360 Circular Screen",
-        videoText: "7680 x 1080 px (or 4 screens of 1920 x 1080 px)",
-        audioText: "6th-order Ambisonics decoded for onsite systems (5.1, 7.1, quadraphonic, Dolby ATMOS)",
+        texts: [
+
+            {
+                textTitle: "Video:",
+                textContent: "7680 x 1080 px (or 4 screens of 1920 x 1080 px)"
+            },
+            {
+                textTitle: "Audio:",
+                textContent: "6th-order Ambisonics decoded for onsite systems (5.1, 7.1, quadraphonic, Dolby ATMOS)"
+            }           
+        ],
         imageSrc: "project1.webp",
         thumbSrc: "p-sm1.webp",
         type: "fixed reproduction"
@@ -11,8 +20,17 @@ const projectInfo = [
     {
         id: 2,
         projectTitle: "Screen x",
-        videoText: "5760 x 1080 px (or 3 screens of 1920 x 1080 px)",
-        audioText: "6th-order Ambisonics decoded for onsite systems (5.1, 7.1, quadraphonic, Dolby ATMOS)",
+        texts: [
+
+            {
+                textTitle: "Video:",
+                textContent: "5760 x 1080 px (or 3 screens of 1920 x 1080 px)"
+            },
+            {
+                textTitle: "Audio:",
+                textContent: "6th-order Ambisonics decoded for onsite systems (5.1, 7.1, quadraphonic, Dolby ATMOS)"
+            }           
+        ],
         imageSrc: "project2.webp",
         thumbSrc: "p-sm2.webp",
         type: "fixed reproduction"
@@ -21,8 +39,17 @@ const projectInfo = [
     {
         id: 3,
         projectTitle: "Domemaster",
-        videoText: "4096 x 4096 px (1:1 aspect ratio)",
-        audioText: "6th-order Ambisonics decoded for onsite systems (5.1, 7.1, quadraphonic, Dolby ATMOS)",
+        texts: [
+
+            {
+                textTitle: "Video:",
+                textContent: "4096 x 4096 px (1:1 aspect ratio)"
+            },
+            {
+                textTitle: "Audio:",
+                textContent: "6th-order Ambisonics decoded for onsite systems (5.1, 7.1, quadraphonic, Dolby ATMOS)"
+            }           
+        ],
         imageSrc: "project3.webp",
         thumbSrc: "p-sm3.webp",
         type: "fixed reproduction"
@@ -30,8 +57,17 @@ const projectInfo = [
     {
         id: 4,
         projectTitle: "Equirectangular",
-        videoText: "7680 x 3840 px (2:1 aspect ratio)",
-        audioText: "6th-order Ambisonics",
+        texts: [
+
+            {
+                textTitle: "Video:",
+                textContent: "7680 x 3840 px (2:1 aspect ratio)"
+            },
+            {
+                textTitle: "Audio:",
+                textContent: "6th-order Ambisonics"
+            }           
+        ],
         imageSrc: "project4.webp",
         thumbSrc: "p-sm4.webp",
         type: "fixed reproduction"
@@ -39,8 +75,17 @@ const projectInfo = [
     {
         id: 5,
         projectTitle: "Regular screen",
-        videoText: "3840 x 2160 px (16:9 aspect ratio)",
-        audioText: "6th-order Ambisonics decoded for onsite systems (5.1, 7.1, quadraphonic, Dolby ATMOS)",
+        texts: [
+
+            {
+                textTitle: "Video:",
+                textContent: "3840 x 2160 px (16:9 aspect ratio)"
+            },
+            {
+                textTitle: "Audio:",
+                textContent: "6th-order Ambisonics decoded for onsite systems (5.1, 7.1, quadraphonic, Dolby ATMOS)"
+            }           
+        ],
         imageSrc: "project5.webp",
         thumbSrc: "p-sm6.webp",
         type: "fixed reproduction"
@@ -49,8 +94,22 @@ const projectInfo = [
     {
         id: 6,
         projectTitle: "Live Performance",
-        videoText: "Custom immersive projection system (to be agreed with local promoters)",
-        audioText: "Custom spatial audio system (to be agreed with local promoters)",
+        texts: [
+
+            {
+                textTitle: "Video:",
+                textContent: "Custom immersive projection system (to be agreed with local promoters)"
+            },
+            {
+                textTitle: "Audio:",
+                textContent: "Custom spatial audio system (to be agreed with local promoters)"
+            },
+            {
+                textTitle: "+ TECH RIDER DOWNLOAD",
+                textContent: ""
+            },
+
+        ],
         imageSrc: "project6.webp",
         thumbSrc: "",
         type: "performance"
@@ -58,8 +117,22 @@ const projectInfo = [
     {
         id: 7,
         projectTitle: "VR App",
-        videoText: "Format: Windows PC VR executable\nVideo: Virtual Reality",
-        audioText: "Audio: Real-time binaural decoding",
+        texts: [
+
+            {
+                textTitle: "Format:",
+                textContent: "Windows PC VR executable"
+            },
+            {
+                textTitle: "Video:",
+                textContent: "Virtual Reality"
+            },
+            {
+                textTitle: "Audio:",
+                textContent: "Real-time binaural decoding"
+            },
+
+        ],
         imageSrc: "project7.webp",
         thumbSrc: "p-sm6.webp",
         type: "timeless/frameless"
@@ -67,8 +140,25 @@ const projectInfo = [
     {
         id: 8,
         projectTitle: "Book Publication",
-        videoText: "Format: Limited Edition (100 units, created for the Barcelona Premiere)",
-        audioText: "Language: Catalan\nPages: 40\n+ Download PDF",
+        texts: [
+
+            {
+                textTitle: "Format:",
+                textContent: "Limited Edition (100 units, created for the Barcelona Premiere)"
+            },
+            {
+                textTitle: "Language:",
+                textContent: "Catalan"
+            },
+            {
+                textTitle: "Pages:",
+                textContent: "40"
+            },
+            {
+                textTitle: "+DOWNLOAD PDF",
+                textContent: ""
+            },
+        ],
         imageSrc: "project8.webp",
         thumbSrc: "",
         type: "timeless/frameless"
@@ -76,8 +166,25 @@ const projectInfo = [
     {
         id: 9,
         projectTitle: "Music Album",
-        videoText: "Format: Digital Audio",
-        audioText: "Composer: Hoarfrost\nAlbum: Waka\nListen here",
+        texts: [
+
+            {
+                textTitle: "Format:",
+                textContent: "Digital Audio"
+            },
+            {
+                textTitle: "Composer:",
+                textContent: "Hoarfrost"
+            },
+            {
+                textTitle: "Album:",
+                textContent: "Waka"
+            },
+            {
+                textTitle: "Listen here",
+                textContent: ""
+            },
+        ],
         imageSrc: "project9.webp",
         thumbSrc: "",
         type: "timeless/frameless"
@@ -85,8 +192,21 @@ const projectInfo = [
     {
         id: 10,
         projectTitle: "Art Installation",
-        videoText: "Format: Digital Audio",
-        audioText: "Audio: Developed in agreement with local curators and adapted to the space’s unique characteristics",
+        texts: [
+
+            {
+                textTitle: "Format:",
+                textContent: "Digital Audio"
+            },
+            {
+                textTitle: "Audio:",
+                textContent: "Developed in agreement with local curators and adapted to the space’s unique characteristics"
+            },
+            {
+                textTitle: "Listen here",
+                textContent: ""
+            },
+        ],
         imageSrc: "project10.webp",
         thumbSrc: "",
         type: "timeless/frameless"

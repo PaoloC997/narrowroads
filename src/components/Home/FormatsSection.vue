@@ -2,10 +2,10 @@
     <div class="fs-main">
         <div class="fs-text-container">
             <div class="fs-flex-left">
-                <h2 class="fs-title light">PRESENTATION <br> FORMATS</h2>
+                <h2 class="fs-title thin">PRESENTATION <br> FORMATS</h2>
             </div>
             <div class="fs-flex-right grotesk">
-                <p>Narrow BackRoads featuring original 360° footage and 6th-order Ambisonics audio, is designed to adapt
+                <p>Narrow BackRoads, featuring original 360° footage and 6th-order Ambisonics audio, is designed to adapt
                     to diverse immersive formats. From pre-rendered fixed presentations and live performances to
                     frameless artistics, the project provides audiences with unique poetic experiences.</p>
 
@@ -13,7 +13,6 @@
                     contexts, fostering engagement through innovative audiovisual storytelling.</p>
             </div>
         </div>
-
         <div class="fs-image-container">
             <div class="fs-image-element" v-for="format in formatData" :key="format.id">
                 <div class="fs-image-pic">
@@ -23,13 +22,11 @@
                     <p>{{ format.formatTitle }}</p>
                 </div>
                 <div class="fs-image-texts">
-
                     <p class="fs-image-text thin" v-for="text in format.texts" :key="text.textTitle">
-                        <router-link :to="`/projects?id=${text.projectId}`">
+                        <router-link style="color:black; text-decoration: none;" :to="`/projects?id=${text.projectId}`">
                             {{ text.textTitle }}
                         </router-link>
                     </p>
-
                 </div>
             </div>
         </div>
@@ -87,6 +84,12 @@ export default {
 .fs-image-title {
     font-size: 2.5rem;
     border-bottom: 1px solid #818181;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.fs-image-title p {
+    margin-bottom: 0.5rem;
 }
 
 .fs-image-text {
@@ -108,7 +111,9 @@ export default {
 .fs-title {
     margin-bottom: 2rem;
     color: gray;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+    margin-top: 0px;
+    letter-spacing: 2px;
     font-weight: 300;
 
 }
@@ -132,6 +137,7 @@ export default {
     line-height: 2.4rem;
     font-weight: 300;
     font-size: 1.5rem;
+    margin-top: 0px;
 }
 
 .fs-flex-right {
@@ -146,5 +152,52 @@ export default {
     margin-top: 0;
     padding-top: 1.5rem;
     margin-bottom: 2rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .fs-main {
+        width:90vw;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+
+    .fs-text-container {
+        flex-direction: column;
+        margin:auto;
+    }
+
+    .fs-image-container {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .fs-image-texts {
+        margin-top: 0.5rem;
+    }
+
+    .fs-image-element {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .fs-flex-left,
+    .fs-flex-right {
+        width: 100%;
+    }
+
+    .fs-title {
+        font-size: 2.5rem;
+    }
+
+    .fs-image-title {
+        font-size: 2rem;
+    }
+
+    .fs-image-text {
+        font-size: 2rem;
+    }
 }
 </style>

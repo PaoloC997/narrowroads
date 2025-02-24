@@ -18,21 +18,18 @@
     /* GT America Compressed Thin */
     @font-face {
       font-family: 'GT America Compressed Thin';
-      src: url('/fonts/GT-America-Compressed-Thin.woff') format('woff'),
-        url('/fonts/GT-America-Compressed-Thin.otf') format('opentype'),
-        url('/fonts/GT-America-Compressed-Thin.ttf') format('truetype');
+      src: url('/fonts/GT-America-Compressed-Thin.otf') format('opentype'),
     }
 
     /* GT America Compressed Light */
     @font-face {
       font-family: 'GT America Compressed Light';
-      src: url('/fonts/GT-America-Compressed-Light.woff') format('woff'),
-        url('/fonts/GT-America-Compressed-Light.otf') format('opentype'),
-        url('/fonts/GT-America-Compressed-Light.ttf') format('truetype');
+      src: url('/fonts/GT-America-Compressed-Light.otf') format('opentype'),
     }
 
     .thin {
       font-family: "GT America Compressed Thin", sans-serif;
+      font-style: normal;
     }
 
     .light {
@@ -59,11 +56,18 @@
       color: #818181;
     }
 
-  /* {
+    .router-link,
+    .router-link-active,
+    .no-link {
+      text-decoration: none;
+      color: black;
+      border: none;
+    }
+
+    /* {
       box-sizing: border-box;
       border: 1px solid red;
     }*/
-      
   </style>
 </head>
 

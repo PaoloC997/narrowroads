@@ -159,7 +159,7 @@ video {
 }
 
 .red {
-    color: red;
+    color: #FF3A00;
 }
 
 .white {
@@ -174,4 +174,26 @@ video {
    margin-left: 7rem;
    width:3rem;
 }
+
+@media (max-width: 768px) {
+
+.logo-big{
+    transform: scale(0.8);
+    max-width: 80%;
+}
+
+.logos-container {
+    flex-direction: column;
+   bottom: 5%;
+}
+
+.h-sub {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+}
+
+
 </style>

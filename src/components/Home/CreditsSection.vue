@@ -4,48 +4,16 @@
             <h2 class="cr-title thin">CREDITS</h2>
         </div>
         <div class="cr-flex-right thin">
-            <div class="cr-text-container">
-                <p class="cr-sub">Production</p>
-                <p class="cr-text">The Acoustic Heritage Collective</p>
-            </div>
-            <div class="cr-text-container">
-                <p class="cr-sub">Direction</p>
-                <p class="cr-text">Ginebra Raventós, Emilio Marx, Joan Lavandeira, Edgardo Gómez</p>
-            </div>
-            <div class="cr-text-container">
-                <p class="cr-sub">Narrative Direction</p>
-                <p class="cr-text">Joan Lavandeira and Ginebra Raventós</p>
-            </div>
-            <div class="cr-text-container">
-                <p class="cr-sub">Music</p>
-                <p class="cr-text">Hoarfrost</p>
-            </div>
-            <div class="cr-text-container">
-                <p class="cr-sub">Music and Sound Production</p>
-                <p class="cr-text">Emilio Marx</p>
-            </div>
-            <div class="cr-text-container">
-                <p class="cr-sub">Spatial Sound Design</p>
-                <p class="cr-text">Edgardo Gómez</p>
-            </div>
-            <div class="cr-text-container">
-                <p class="cr-sub">Technical Production, Visuals, Lights, 3D</p>
-                <p class="cr-text">Joan Lavandeira</p>
-            </div>
-            <div class="cr-text-container">
-                <p class="cr-sub">English and Japanese Voices</p>
-                <p class="cr-text">Satoshi Suzuki and Reiko Yamada</p>
+            <div class="cr-text-container" v-for="(credit, index) in credits" :key="index">
+                <p class="cr-sub">{{ credit.role }}</p>
+                <p class="cr-text">{{ credit.name }}</p>
             </div>
         </div>
     </div>
     <div class="cr-flex-left-logos thin">
         <div class="cr-logo-container">
             <p class="cr-red">Special thanks to</p>
-
-            <p class="cr-text-2">Haptos Soundlab, Antic Teatre, Influx Festival,
-                Josep M. Jordana, Carolina Mora, Reiko Yamada, Satoshi Suzuki,
-                Enol Balado (Disseny sonor adicional, Sculpted Audio),
-                Belén Berlín, Juliana Rabello and Paolo Carretero</p>
+            <p class="cr-text-2">{{ specialThanks }}</p>
 
             <p class="cr-red">The project has been supported by</p>
             <div class="cr-logos">
@@ -57,7 +25,7 @@
         </div>
     </div>
     <div class="cr-text-container-2 thin">
-            <p class="cr-text-2">Subvencions per a projectes culturals  que facin servir tecnologia immersiva </p>
+        <p class="cr-text-2">Subvencions per a projectes culturals que facin servir tecnologia immersiva </p>
     </div>
     <div class="cr-islands">
         <img src="../../../public/assets/logo4.webp" class="cr-islands-logo" />
@@ -67,6 +35,21 @@
 <script>
 export default {
     name: 'CreditsSection',
+    data() {
+        return {
+            credits: [
+                { role: 'Production', name: 'The Acoustic Heritage Collective' },
+                { role: 'Direction', name: 'Ginebra Raventós, Emilio Marx, Joan Lavandeira, Edgardo Gómez' },
+                { role: 'Narrative Direction', name: 'Joan Lavandeira and Ginebra Raventós' },
+                { role: 'Music', name: 'Hoarfrost' },
+                { role: 'Music and Sound Production', name: 'Emilio Marx' },
+                { role: 'Spatial Sound Design', name: 'Edgardo Gómez' },
+                { role: 'Technical Production, Visuals, Lights, 3D', name: 'Joan Lavandeira' },
+                { role: 'English and Japanese Voices', name: 'Satoshi Suzuki and Reiko Yamada' }
+            ],
+            specialThanks: 'Haptos Soundlab, Antic Teatre, Influx Festival, Josep M. Jordana, Carolina Mora, Reiko Yamada, Satoshi Suzuki, Enol Balado (Disseny sonor adicional, Sculpted Audio), Belén Berlín, Juliana Rabello and Paolo Carretero',
+        };
+    }
 };
 </script>
 
@@ -93,13 +76,12 @@ export default {
     margin-bottom: 3rem;
 }
 
-.cr-text-container-2{
+.cr-text-container-2 {
     margin-bottom: 3rem;
     font-size: 2.5rem;
     margin-left: 5rem;
     text-transform: uppercase;
 }
-
 
 .cr-flex-left p {
     line-height: 2.4rem;
@@ -115,7 +97,6 @@ export default {
     flex: 1;
 }
 
-
 .cr-sub {
     color: gray;
     border-bottom: 1px solid gray;
@@ -127,7 +108,6 @@ export default {
     margin-bottom: 1rem;
     color: gray;
     font-size: 3rem;
-
 }
 
 .cr-red {
@@ -147,6 +127,7 @@ export default {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
 .cr-logo-container {
     margin-left: 5rem;
     text-transform: uppercase;
@@ -158,7 +139,7 @@ export default {
     justify-content: space-between;
 }
 
-.cr-logo{
+.cr-logo {
     object-fit: contain;
     margin-right: 8rem;
     max-width: 25vw;
@@ -168,7 +149,7 @@ export default {
 
 .cr-islands {
     width: 100vw;
-    height:50vh;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -177,5 +158,35 @@ export default {
 
 .cr-islands-logo {
     width: 15vw;
+}
+
+@media (max-width: 768px) {
+
+.cr-main {
+    height: auto;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-right: 3rem;
+   
+}
+
+.cr-logo-container {
+    margin-left: 3rem;
+}
+
+.cr-logos {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+    flex-wrap:nowrap;
+}
+
+.cr-text-container-2 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    text-transform: uppercase;
+}
+
 }
 </style>

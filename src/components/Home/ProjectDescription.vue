@@ -6,7 +6,8 @@
         <h2 class="d-title thin">THE PATH OF SOUND</h2>
         <div class="d-flex">
             <div class="d-flex-left">
-                <p class="grotesk"> When I enter the room, the first image that greets me is Ginebra Raventós, Ɇ₥łⱠłØ ₥₳ⱤӾ, Joan
+                <p class="grotesk"> When I enter the room, the first image that greets me is Ginebra Raventós, Ɇ₥łⱠłØ
+                    ₥₳ⱤӾ, Joan
                     Lavandeira and
                     Edgardo Gómez sitting cross-legged on a tatami around a table. Three screens surround them,
                     displaying
@@ -49,14 +50,16 @@
                     landscape
                     upon which the poet lays their eyes, or from the relationship between elements and time (whether
                     atmospheric
-                    or sequential). 
+                    or sequential).
                 </p>
             </div>
             <div class="d-flex-right">
-                <h2 id="d-text-large" class="thin">Narrow Backroads dissolves authorship into the collective and leaves the viewer to complete the
+                <h2 id="d-text-large" class="thin">Narrow Backroads dissolves authorship into the collective and leaves
+                    the viewer to complete the
                     journey with
                     the sensations awakened.</h2>
-                <p class="grotesk">Similarly, just as in haikus the poet's identity fades in favor of the landscape, being collective
+                <p class="grotesk">Similarly, just as in haikus the poet's identity fades in favor of the landscape,
+                    being collective
                     compositions, it remains open for the reader to interpret and complete its meaning, Narrow Backroads
                     dissolves authorship into the collective and leaves the viewer to complete the journey with the
                     sensations
@@ -96,13 +99,16 @@ export default {
     margin-bottom: 2rem;
     color: gray;
     font-size: 2.5rem;
-    
+    border-bottom: 1px solid #818181;
+    padding-bottom: 1rem;
+
 }
+
 .d-flex {
     display: flex;
     flex-direction: row;
     flex: 1;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .d-flex-left {
@@ -111,7 +117,8 @@ export default {
     padding-right: 2rem;
 }
 
-.d-flex-left p , .d-flex-right p {
+.d-flex-left p,
+.d-flex-right p {
     line-height: 2.4rem;
     font-weight: 300;
     font-size: 1.5rem;
@@ -119,17 +126,34 @@ export default {
 
 .d-flex-right {
     flex: 1;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-#d-text-large{
-    font-size: 6.25rem!important;
+#d-text-large {
+    font-size: 6.25rem !important;
     line-height: 6rem;
-    font-weight: 500!important;
+    font-weight: 500 !important;
     margin-top: 0;
     padding-top: 1.5rem;
     margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
 
+    }
+
+    .d-flex-left p,
+    .d-flex-right p {
+        line-height: 2.4rem;
+        font-size: 1.5rem;
+    }
+
+    .d-container {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+}
 </style>

@@ -2,7 +2,8 @@
     <div class="i-main">
         <div class="i-flex-left">
             <h2 class="i-title thin">SYNOPSYS</h2>
-            <p class="grotesk">A cinematic poem created from the travel diary of the multidisciplinary collective Acoustic Heritage
+            <p class="grotesk">A cinematic poem created from the travel diary of the multidisciplinary collective
+                Acoustic Heritage
                 Collective, following the pilgrimage through villages and monasteries of the poet Matsuo Basho in
                 18th-century feudal Japan.<br><br>
 
@@ -16,12 +17,13 @@
                 While Oku no Hosomichi literally translates as “The Narrow Road to
                 the Interior,” Octavio Paz interpreted it as The Narrow Roads to Oku, highlighting both the elusive
                 nature of Japanese translation and the enigmatic quality of haikus from a Western perspective.<br>
-                
+
                 In deconstructing expectations and attempting to crystallize the memory of the unrepeatable, the artists
                 create a collective poetic log, acting as a single heart.<br><br>
 
                 This ephemeral space serves to reflect on the journey, geography as an extension of the mind, the
-                impacts of globalization, and the eternal emotions that emerge when faced with breathtaking landscapes.<br><br>
+                impacts of globalization, and the eternal emotions that emerge when faced with breathtaking
+                landscapes.<br><br>
 
                 Narrow Backroads (L’estret camí dins teu) is the second part of a trilogy of poetic films, which began
                 with Iceland: Journey to the Center of the Sound. In this first installment, the collective retraced the
@@ -63,7 +65,7 @@ export default {
     align-items: start;
     font-size: 1.5rem;
     margin-left: 5rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .i-flex-left p {
@@ -75,6 +77,7 @@ export default {
     margin-bottom: 2rem;
     color: gray;
     font-size: 3rem;
+    letter-spacing: 2px;
 }
 
 .i-flex-right {
@@ -88,5 +91,32 @@ export default {
     object-fit: cover;
     width: 50vw;
     margin-top: 10rem;
+}
+
+@media (max-width: 768px) {
+    .i-main {
+        flex-direction: column;
+
+    }
+
+    .i-flex-left {
+        flex: 1;
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .i-image {
+        object-fit: cover;
+        width: 100vw;
+        margin-top: 10rem;
+    }
+
+
+
 }
 </style>

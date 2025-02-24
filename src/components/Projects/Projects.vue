@@ -1,11 +1,9 @@
 <template>
-  <div class="ps-main" :key="$route.query.id">
-    <div 
-      v-for="project in projectData" 
-      :key="project.id" 
-      :id="`project-${project.id}`"
-    >
+  <div class="ps-main">
+    <div v-for="project in projectData" :key="project.id">
       <Project 
+        :key="project.id" 
+        ref="projectComponents"
         :projectTitle="project.projectTitle" 
         :videoText="project.videoText" 
         :audioText="project.audioText"
@@ -13,6 +11,7 @@
         :thumbSrc="project.thumbSrc" 
         :id="project.id" 
         :type="project.type" 
+        :texts="project.texts"
       />
     </div>
     <Footer />
@@ -23,6 +22,7 @@
 import Project from './Project.vue';
 import { projectInfo } from '@/data/textos';
 import Footer from '../Home/Footer.vue';
+import { nextTick } from 'vue';
 
 export default {
   name: 'Projects',
@@ -33,27 +33,23 @@ export default {
     };
   },
   mounted() {
-    this.$nextTick(() => {
-      this.scrollToProject();
-    });
+    this.scrollToProject();
   },
   watch: {
-    '$route.query.id': function(newId) {
-      this.scrollToProject();
-    }
+    '$route.query.id': 'scrollToProject'
   },
   methods: {
     scrollToProject() {
       const projectId = this.$route.query.id;
       if (projectId) {
-        const elementId = `project-${projectId}`;
-        const element = document.getElementById(elementId);
-        
-        if (element) {
+        nextTick(() => {
           setTimeout(() => {
-            element.scrollIntoView();
-          }, 10);
-        }
+            const projectRef = this.$refs.projectComponents.find((project) => project.id === parseInt(projectId));
+            if (projectRef) {
+              projectRef.scrollToTop();
+            }
+          }, 20); 
+        });
       }
     }
   }
