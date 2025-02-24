@@ -101,23 +101,23 @@ const formatData = [
 
             {
                 textTitle: " 360 Circular Screen",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 1
             },
             {
                 textTitle: "Screen X",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 2
             },
             {
                 textTitle: "Domemaster",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 3
             },
             {
                 textTitle: "Equirectangular",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 4
             },
             {
-                textTitle: "Equirectangular",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                textTitle: "Regular Screen",
+                projectId: 5
             },
             
         ],
@@ -134,7 +134,7 @@ const formatData = [
 
             {
                 textTitle: "Live Performance",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 6
             }            
         ],
         videoText: "5760 x 1080 px (or 3 screens of 1920 x 1080 px)",
@@ -151,19 +151,19 @@ const formatData = [
 
             {
                 textTitle: "VR App",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 7
             },
             {
                 textTitle: "Book publication",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 8
             },
             {
                 textTitle: "Music Album",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 9
             },
             {
                 textTitle: "Art Installation",
-                textLink: "https://domemaster.com/en/360-circular-screen"
+                projectId: 10
             }
         ],
         videoText: "4096 x 4096 px (1:1 aspect ratio)",

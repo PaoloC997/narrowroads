@@ -23,9 +23,13 @@
                     <p>{{ format.formatTitle }}</p>
                 </div>
                 <div class="fs-image-texts">
+
                     <p class="fs-image-text thin" v-for="text in format.texts" :key="text.textTitle">
-                        {{text.textTitle }}
+                        <router-link :to="`/projects?id=${text.projectId}`">
+                            {{ text.textTitle }}
+                        </router-link>
                     </p>
+
                 </div>
             </div>
         </div>
