@@ -129,4 +129,56 @@ export default {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+@media (max-width: 900px) {
+    
+  .p-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+}
+
+.p-flex-left {
+  flex: 1;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  align-items: start;
+  font-size: 2.5rem;
+}
+
+.p-flex-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: start;
+}
+
+.p-thumb {
+  object-fit: cover;
+  width: 80vw;
+  margin-top: 5rem;
+}
+
+.p-thumb-sm{
+  object-fit: cover;
+  width: 48vw;
+  margin-top: 5rem;
+  margin-bottom: 0px;
+}
+
+.p-title {
+  font-size: 5.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+}
 </style>
