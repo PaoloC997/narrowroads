@@ -32,11 +32,16 @@
                 islands.<br><br>
                 Produced by Acoustic Heritage Collective with the support of Barcelona Crea, The Goethe-Institut and
                 Generalitat de Catalunya.</p>
+
+            <div class="i-button">
+                <p class="i-button-p gray thin">WATCH THE TRAILER</p>
+            </div>
         </div>
         <div class="i-flex-right">
             <img class="i-image" src="../../../public/assets/home2.webp" />
         </div>
     </div>
+
 
 </template>
 
@@ -53,7 +58,7 @@ export default {
     display: flex;
     flex-direction: row;
     margin-bottom: 5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     border-bottom: 1px solid #818181;
 }
 
@@ -93,6 +98,26 @@ export default {
     margin-top: 10rem;
 }
 
+.i-button  {
+    width: 15vw;
+    border:1px solid #818181;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    flex-wrap: nowrap;
+}
+
+.i-button p  {
+   font-size: 2.5rem;
+   margin: 0px;
+}
+
 @media (max-width: 768px) {
     .i-main {
         flex-direction: column;
@@ -114,6 +139,10 @@ export default {
         object-fit: cover;
         width: 100vw;
         margin-top: 10rem;
+    }
+
+    .i-button  {
+        width: 50vw;
     }
 
 

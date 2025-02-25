@@ -155,7 +155,7 @@ export default {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
     .fs-main {
         width:90vw;
