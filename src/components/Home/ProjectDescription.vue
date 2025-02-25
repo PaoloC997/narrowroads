@@ -155,5 +155,10 @@ export default {
         margin-right: 3rem;
     }
 
+    .d-image {
+        height: auto;
+        width: 100vw;
+}
+
 }
 </style>
