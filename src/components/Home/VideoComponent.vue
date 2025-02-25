@@ -21,9 +21,7 @@
                     <span class="white">Ginebra raventos, emilio maRx, Joan lavandeira, Edgardo Goméz</span>
                 </p>
             </div>
-
         </div>
-
     </div>
 </template>
 
@@ -175,16 +173,16 @@ video {
    width:3rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
 
 .logo-big{
-    transform: scale(0.8);
-    max-width: 80%;
+    transform: scale(0.9);
+    max-width: 90%;
 }
 
 .logos-container {
     flex-direction: column;
-   bottom: 5%;
+    bottom: 5%;
 }
 
 .h-sub {
@@ -192,6 +190,46 @@ video {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+
+.islands {
+    position: absolute;
+    top: 5%;
+    margin: auto;
+    left: 15%;
+    right: 15%;
+    z-index: 101;
+    width: 20vw;
+}
+
+.h-text-container {
+    top: 53%;
+    margin: auto;
+    width: 50vw;
+}
+
+.h-flex-left {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1.2rem;
+    width:50vw;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.h-logo-sm {
+    width: 11vw;
+    transform: scale(2.5);
+    margin-left: 3rem;
+}
+
+.h-logo-sm2 {
+    width: 10vw;
+    transform: scale(1.5);
+}
+
 
 }
 

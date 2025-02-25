@@ -19,7 +19,7 @@ export default {
 </script>
 <style>
 .c-main {
-    height: 40vh;
+    height: 42vh;
     width: 100vw;
     display: flex;
     flex-direction: row;

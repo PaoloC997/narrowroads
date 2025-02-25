@@ -16,13 +16,13 @@
             <p class="cr-text-2">{{ specialThanks }}</p>
 
             <p class="cr-red">The project has been supported by</p>
-            <div class="cr-logos">
-                <img src="../../../public/assets/ah.webp" class="cr-logo" />
-                <img src="../../../public/assets/logo1.webp" class="cr-logo" />
-                <img src="../../../public/assets/logo2.webp" class="cr-logo" />
-                <img src="../../../public/assets/h-logo.webp" class="cr-logo" />
-            </div>
         </div>
+    </div>
+    <div class="cr-logos">
+        <img src="../../../public/assets/ah.webp" class="cr-logo" />
+        <img src="../../../public/assets/logo1.webp" class="cr-logo" />
+        <img src="../../../public/assets/logo2.webp" class="cr-logo" />
+        <img src="../../../public/assets/h-logo.webp" class="cr-logo" />
     </div>
     <div class="cr-text-container-2 thin">
         <p class="cr-text-2">Subvencions per a projectes culturals que facin servir tecnologia immersiva </p>
@@ -137,6 +137,8 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 70vw;
+    margin-left: 5rem;
 }
 
 .cr-logo {
@@ -162,31 +164,57 @@ export default {
 
 @media (max-width: 768px) {
 
-.cr-main {
-    height: auto;
-    flex-direction: column;
-    margin-left: 3rem;
-    margin-right: 3rem;
-   
-}
+    .cr-main {
+        height: auto;
+        flex-direction: column;
+        margin-left: 3rem;
+        margin-right: 3rem;
 
-.cr-logo-container {
-    margin-left: 3rem;
-}
+    }
 
-.cr-logos {
-    display: flex;
-    flex-direction: row;
-    margin-right: 3rem;
-    flex-wrap:nowrap;
-}
+    .cr-logo-container {
+        margin-left: 3rem;
+        width: 90vw;
+    }
 
-.cr-text-container-2 {
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-    margin-left: 3rem;
-    text-transform: uppercase;
-}
+    .cr-logos {
+        display: flex;
+        flex-direction: row;
+        margin-right: 3rem;
+        flex-wrap: nowrap;
+    }
+
+    .cr-text-container-2 {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        text-transform: uppercase;
+    }
+
+    .cr-logos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        margin-left: 3rem;
+    }
+
+    .cr-logo {
+        object-fit: contain;
+        margin-right: 8rem;
+        max-width: 30vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .cr-islands-logo {
+        width: 35vw;
+    }
+
+    .cr-text-2 {
+        margin-right: 1rem;
+    }
+
 
 }
 </style>

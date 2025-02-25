@@ -41,8 +41,6 @@
             <img class="i-image" src="../../../public/assets/home2.webp" />
         </div>
     </div>
-
-
 </template>
 
 <script>
@@ -144,8 +142,6 @@ export default {
     .i-button  {
         width: 50vw;
     }
-
-
 
 }
 </style>

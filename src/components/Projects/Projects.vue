@@ -46,9 +46,12 @@ export default {
           setTimeout(() => {
             const projectRef = this.$refs.projectComponents.find((project) => project.id === parseInt(projectId));
             if (projectRef) {
-              projectRef.scrollToTop();
-            }
-          }, 20); 
+              projectRef.scrollToTop( {
+                behavior: 'smooth',
+                block: 'start'
+              });
+            } 
+          }, 30); 
         });
       }
     }
