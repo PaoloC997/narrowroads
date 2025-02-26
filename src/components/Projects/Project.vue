@@ -146,7 +146,7 @@ export default {
   margin-bottom: 0px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     
   .p-text-container {
   display: flex;
@@ -189,7 +189,7 @@ export default {
 }
 
 .p-title {
-  font-size: 5.5rem;
+  font-size: 3rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   text-transform: uppercase;

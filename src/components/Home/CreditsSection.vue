@@ -162,18 +162,18 @@ export default {
     width: 15vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1268px) {
 
     .cr-main {
         height: auto;
         flex-direction: column;
-        margin-left: 3rem;
+        margin-left: 2rem;
         margin-right: 3rem;
 
     }
 
     .cr-logo-container {
-        margin-left: 3rem;
+        margin-left: 2rem;
         width: 90vw;
     }
 
@@ -186,8 +186,8 @@ export default {
 
     .cr-text-container-2 {
         margin-bottom: 3rem;
-        font-size: 2.5rem;
-        margin-left: 3rem;
+        font-size: 2.2rem;
+        margin-left: 2rem;
         margin-right: 3rem;
         text-transform: uppercase;
     }
@@ -196,7 +196,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
 
     .cr-logo {

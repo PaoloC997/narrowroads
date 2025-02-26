@@ -138,7 +138,7 @@ export default {
     margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1268px) {
     .d-flex {
         flex-direction: column;
 
@@ -147,11 +147,11 @@ export default {
     .d-flex-left p,
     .d-flex-right p {
         line-height: 2.4rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .d-container {
-        margin-left: 3rem;
+        margin-left: 2rem;
         margin-right: 3rem;
     }
 
