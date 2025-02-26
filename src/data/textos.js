@@ -106,7 +106,8 @@ const projectInfo = [
             },
             {
                 textTitle: "+ TECH RIDER DOWNLOAD",
-                textContent: ""
+                textContent: "https://drive.google.com/file/d/1JDiRTHvPTG-CUjaJbyowoZjj79QZAk85/view?usp=drive_link",
+                isLink: true
             },
 
         ],
@@ -131,10 +132,25 @@ const projectInfo = [
                 textTitle: "Audio:",
                 textContent: "Real-time binaural decoding"
             },
+            {
+                textTitle: "Links:",
+                textContent: ""
+            },
+            {
+                textTitle: "Trailer PCVR",
+                textContent: "https://youtu.be/ruzSNvxtN7A",
+                isLink: true
+            },
+            {
+                textTitle: "Download PCVR win exe Beta Version (28 GB)",
+                textContent: "https://drive.google.com/drive/folders/18WDQizAFeEM4eKp0mDigLVQUe0jsQ3k-?usp=sharing",
+                isLink: true
+            },
+
 
         ],
         imageSrc: "project7.webp",
-        thumbSrc: "p-sm6.webp",
+        thumbSrc: "p-sm7.webp",
         type: "timeless/frameless"
     },
     {
@@ -156,7 +172,8 @@ const projectInfo = [
             },
             {
                 textTitle: "+DOWNLOAD PDF",
-                textContent: ""
+                textContent: "https://drive.google.com/file/d/1IkbLHUN6c5hDX5AkZM1bnkQx0Sm6_tGy/view?usp=drive_link",
+                isLink: true
             },
         ],
         imageSrc: "project8.webp",
@@ -182,7 +199,8 @@ const projectInfo = [
             },
             {
                 textTitle: "Listen here",
-                textContent: ""
+                textContent: "https://hoarfrost2022.bandcamp.com/album/waka",
+                isLink: true
             },
         ],
         imageSrc: "project9.webp",
@@ -201,10 +219,6 @@ const projectInfo = [
             {
                 textTitle: "Audio:",
                 textContent: "Developed in agreement with local curators and adapted to the space’s unique characteristics"
-            },
-            {
-                textTitle: "Listen here",
-                textContent: ""
             },
         ],
         imageSrc: "project10.webp",

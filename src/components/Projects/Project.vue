@@ -1,4 +1,4 @@
-<template>
+<<template>
   <div :class="id === 10 ? 'p-main' : 'p-main border'" ref="projectElement">
     <h2 class="p-title gray thin">{{ projectTitle }}</h2>
     <img :src="`/assets/${imageSrc}`" class="p-image" />
@@ -7,7 +7,17 @@
         <p class="p-st">{{ type }}</p>
         <hr class="bar" />
         <div v-for="text in texts" :key="text.textTitle">
-          <p class="p-p"><span class="gray">{{ text.textTitle }}  </span> {{ text.textContent }}</p>
+          <p class="p-p">
+            <span v-if="text.isLink">
+              <a class="p-link" :href="text.textContent" target="_blank" rel="noopener noreferrer">
+                {{ text.textTitle }}
+              </a>
+            </span>
+            <span v-else>
+              <span class="gray">{{ text.textTitle }}</span>
+              {{ text.textContent }}
+            </span>
+          </p>
         </div>
       </div>
       <div v-if="thumbSrc !== ''" class="p-flex-right">
@@ -16,6 +26,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'Project',
@@ -120,6 +131,11 @@ export default {
 
 #p-thumb-lg {
   transform: scale(1.2);
+}
+
+.p-link {
+  text-decoration: none;
+  color:black;
 }
 
 .bar {

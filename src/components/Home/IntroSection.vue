@@ -34,7 +34,9 @@
                 Generalitat de Catalunya.</p>
 
             <div class="i-button">
-                <p class="i-button-p gray thin">WATCH THE TRAILER</p>
+                <a class="i-link" href="https://youtu.be/64eAuZeTw6I?si=im81fULdA9tzCQy7" target="_blank">
+                    <p class="i-button-p gray thin">WATCH THE TRAILER</p>
+                </a>
             </div>
         </div>
         <div class="i-flex-right">
@@ -58,6 +60,11 @@ export default {
     margin-bottom: 5rem;
     padding-bottom: 5rem;
     border-bottom: 1px solid #818181;
+}
+
+.i-link {
+    text-decoration: none;
+    color: #818181;
 }
 
 .i-flex-left {
@@ -96,9 +103,9 @@ export default {
     margin-top: 10rem;
 }
 
-.i-button  {
+.i-button {
     width: 15vw;
-    border:1px solid #818181;
+    border: 1px solid #818181;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
@@ -111,9 +118,9 @@ export default {
     flex-wrap: nowrap;
 }
 
-.i-button p  {
-   font-size: 2.5rem;
-   margin: 0px;
+.i-button p {
+    font-size: 2.5rem;
+    margin: 0px;
 }
 
 @media (max-width: 768px) {
@@ -139,7 +146,7 @@ export default {
         margin-top: 10rem;
     }
 
-    .i-button  {
+    .i-button {
         width: 50vw;
     }
 
