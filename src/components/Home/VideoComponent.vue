@@ -17,7 +17,7 @@
             </div>
             <div class="h-flex-right">
                 <p class="h-sub light">
-                   <span class="red">A cinematic poem by: </span> 
+                    <span class="red">A cinematic poem by: </span>
                     <span class="white">Ginebra raventos, emilio maRx, Joan lavandeira, Edgardo Goméz</span>
                 </p>
             </div>
@@ -120,7 +120,7 @@ video {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    width:50vw;
+    width: 50vw;
     padding-left: 3rem;
 }
 
@@ -129,7 +129,7 @@ video {
     flex: 1;
     justify-content: center;
     padding-right: 3rem;
-    
+
 }
 
 .h-logo-sm {
@@ -145,7 +145,7 @@ video {
 
 .h-logo-sm3 {
     width: 9vw;
-   
+
 }
 
 .logo {
@@ -165,73 +165,141 @@ video {
 }
 
 #logo-small {
-   transform: scale(1.6);
+    transform: scale(1.6);
 }
 
 #logo-small2 {
-   margin-left: 7rem;
-   width:3rem;
-}
-
-@media (max-width: 980px) {
-
-.logo-big{
-    transform: scale(0.9);
-    max-width: 90%;
-}
-
-.logos-container {
-    flex-direction: column;
-    bottom: 5%;
-}
-
-.h-sub {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-
-.islands {
-    position: absolute;
-    top: 5%;
-    margin: auto;
-    left: 15%;
-    right: 15%;
-    z-index: 101;
-    width: 20vw;
-}
-
-.h-text-container {
-    top: 53%;
-    margin: auto;
-    width: 50vw;
-}
-
-.h-flex-left {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 1.2rem;
-    width:50vw;
-    padding-left: 3rem;
-    margin-bottom: 2rem;
-}
-
-.h-logo-sm {
-    width: 11vw;
-    transform: scale(2.5);
-    margin-left: 3rem;
-}
-
-.h-logo-sm2 {
-    width: 10vw;
-    transform: scale(1.5);
+    margin-left: 7rem;
+    width: 3rem;
 }
 
 
+@media (min-width: 1280px) and (max-width: 1440px) {
+
+    .h-text-container {
+        top: 65%;
+    }
+
+    .logo-big {
+        transform: scale(0.9);
+        max-width: 90%;
+    }
+
+    .h-sub {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    #logo-small {
+        transform: scale(1.4);
+    }
+
+    #logo-small2 {
+        margin-left: 7rem;
+        width: 2rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .logo-big {
+        transform: scale(0.9);
+        max-width: 90%;
+    }
+
+    .logos-container {
+        width: 100vw;
+        flex-direction: column;
+        bottom: 8%;
+
+    }
+
+    .h-sub {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    .islands {
+        position: absolute;
+        top: 5%;
+        margin: auto;
+        left: 15%;
+        right: 15%;
+        z-index: 101;
+        width: 20vw;
+    }
+
+    .h-text-container {
+        top: 53%;
+        margin: auto;
+        width: 50vw;
+    }
+
+
+    .h-logo-sm {
+        width: 11vw;
+        transform: scale(2.5);
+        margin-left: 3rem;
+    }
+
+    .h-logo-sm2 {
+        width: 10vw;
+        transform: scale(1.5);
+    }
+
+    .h-flex-left {
+        padding-left: 1rem;
+    }
+
+
 }
 
 
+
+@media (min-width: 1900px) {
+
+    .h-text-container {
+        top: 80%;
+
+    }
+
+    .logo-big {
+        transform: scale(1.2);
+        max-width: 90%;
+    }
+
+}
+
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+
+    .logos-container {
+        width: 100vw;
+        gap: 5rem
+    }
+
+
+
+    #logo-small2 {
+        margin-left: 4rem;
+        width: 2rem;
+    }
+
+}
+
+@media (min-width: 1800px) {
+
+    .h-text-container {
+        top: 60%;
+        max-width: 50%;
+
+    }
+
+    .h-text {
+        font-size: 1.7rem;
+    }
+
+
+}
 </style>
