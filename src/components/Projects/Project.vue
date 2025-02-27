@@ -1,7 +1,7 @@
-<<template>
+<template>
   <div :class="id === 10 ? 'p-main' : 'p-main border'" ref="projectElement">
     <h2 class="p-title gray thin">{{ projectTitle }}</h2>
-    <img :src="`/assets/${imageSrc}`" class="p-image" />
+    <img :src="`narrowbackroads/assets/${imageSrc}`" class="p-image" />
     <div class="p-text-container thin">
       <div class="p-flex-left">
         <p class="p-st">{{ type }}</p>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div v-if="thumbSrc !== ''" class="p-flex-right">
-        <img :id="id === 2 ? 'p-thumb-lg' : ''"  :src="`/assets/${thumbSrc}`" :class="id === 3 ? 'p-thumb-sm' : 'p-thumb'" />
+        <img :id="id === 2 ? 'p-thumb-lg' : ''"  :src="`narrowbackroads/assets/${thumbSrc}`" :class="id === 3 ? 'p-thumb-sm' : 'p-thumb'" />
       </div>
     </div>
   </div>

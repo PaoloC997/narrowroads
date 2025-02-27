@@ -16,7 +16,7 @@
         <div class="fs-image-container">
             <div class="fs-image-element" v-for="format in formatData" :key="format.id">
                 <div class="fs-image-pic">
-                    <img :src="`/assets/${format.imageSrc}`" class="fs-image" />
+                    <img :src="`narrowbackroads/assets/${format.imageSrc}`" class="fs-image" />
                 </div>
                 <div class="fs-image-title gray thin">
                     <p>{{ format.formatTitle }}</p>
