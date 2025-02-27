@@ -58,14 +58,14 @@ video {
     top: 30%;
     bottom: 50%;
     z-index: 101;
-    transform: scale(1.2);
+    transform: scale(1.1);
     justify-self: center;
     align-self: center;
 }
 
 .islands {
     position: absolute;
-    top: 5%;
+    top: 3%;
     margin: auto;
     left: 15%;
     right: 15%;
@@ -75,7 +75,7 @@ video {
 
 .h-text-container {
     position: absolute;
-    top: 60%;
+    top: 65%;
     margin: auto;
     left: 15%;
     right: 15%;
@@ -93,7 +93,7 @@ video {
 }
 
 .h-sub {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
 }
 
@@ -186,7 +186,7 @@ video {
     }
 
     .h-sub {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-transform: uppercase;
     }
 
@@ -288,18 +288,5 @@ video {
 
 }
 
-@media (min-width: 1800px) {
 
-    .h-text-container {
-        top: 60%;
-        max-width: 50%;
-
-    }
-
-    .h-text {
-        font-size: 1.7rem;
-    }
-
-
-}
 </style>

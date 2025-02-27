@@ -16,7 +16,7 @@
         <div class="fs-image-container">
             <div class="fs-image-element" v-for="format in formatData" :key="format.id">
                 <div class="fs-image-pic">
-                    <img :src="`narrowbackroads/assets/${format.imageSrc}`" class="fs-image" />
+                    <img :src="`/assets/${format.imageSrc}`" class="fs-image" />
                 </div>
                 <div class="fs-image-title gray thin">
                     <p>{{ format.formatTitle }}</p>
@@ -52,7 +52,6 @@ export default {
     flex-direction: column;
     margin-left: 5rem;
     margin-right: 5rem;
-    padding-top: 3rem;
     margin-bottom: 5rem;
     padding-bottom: 5rem;
 }
@@ -82,7 +81,7 @@ export default {
 }
 
 .fs-image-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-bottom: 1px solid #818181;
     padding-bottom: 0px;
     margin-bottom: 5px;
@@ -93,7 +92,7 @@ export default {
 }
 
 .fs-image-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2.4rem;
     font-weight: 200;
     text-transform: uppercase;
@@ -109,7 +108,7 @@ export default {
 }
 
 .fs-title {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     color: gray;
     font-size: 4.5rem;
     margin-top: 0px;
@@ -127,22 +126,22 @@ export default {
 }
 
 .fs-flex-left {
-    letter-spacing: 7%;
+    letter-spacing: 1px;
     padding-right: 2rem;
     width: 30%;
 }
 
 .fs-flex-left p,
 .fs-flex-right p {
-    line-height: 2.4rem;
+    line-height: 2rem;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 0px;
 }
 
 .fs-flex-right {
-    letter-spacing: 2px;
-    width: 60%;
+    letter-spacing: 1px;
+    width: 62%
 }
 
 #fs-text-large {

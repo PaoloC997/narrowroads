@@ -119,9 +119,9 @@ export default {
 
 .d-flex-left p,
 .d-flex-right p {
-    line-height: 2.4rem;
+    line-height: 2rem;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .d-flex-right {
@@ -130,7 +130,7 @@ export default {
 }
 
 #d-text-large {
-    font-size: 6.25rem !important;
+    font-size: 6rem !important;
     line-height: 6rem;
     font-weight: 500 !important;
     margin-top: 0;
@@ -146,8 +146,8 @@ export default {
 
     .d-flex-left p,
     .d-flex-right p {
-        line-height: 2.4rem;
-        font-size: 1.3rem;
+        line-height: 2rem;
+        font-size: 1.2rem;
     }
 
     .d-container {

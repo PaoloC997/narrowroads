@@ -60,13 +60,13 @@ export default {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 5rem;
     margin-right: 5rem;
 }
 
 .cr-flex-left {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     flex: 1;
 }
@@ -78,13 +78,13 @@ export default {
 
 .cr-text-container-2 {
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 5rem;
     text-transform: uppercase;
 }
 
 .cr-flex-left p {
-    line-height: 2.4rem;
+    line-height: 2rem;
     font-weight: 300;
     display: flex;
     align-items: start;
@@ -92,7 +92,7 @@ export default {
 
 .cr-flex-left-logos {
     width: 50vw;
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     flex: 1;
 }

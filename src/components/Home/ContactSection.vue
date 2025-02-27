@@ -19,7 +19,7 @@ export default {
 </script>
 <style>
 .c-main {
-    height: 42vh;
+    height: auto;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -65,24 +65,5 @@ export default {
     font-weight: lighter !important;
 }
 
-@media (max-width: 908px) {
 
-    .c-main {
-        height: auto;
-        flex-direction: column;
-        padding-right: 1rem;
-
-    }
-
-    .c-flex-left {
-        margin-left: 2rem;
-    }
-
-    .c-text {
-        color: white;
-        font-size: 1.2rem;
-        font-weight: lighter !important;
-    }
-
-}
 </style>

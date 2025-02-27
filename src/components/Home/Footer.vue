@@ -29,7 +29,7 @@ export default {
     display: flex;
     flex-direction: row;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-top: 1px solid #818181;
 }
 

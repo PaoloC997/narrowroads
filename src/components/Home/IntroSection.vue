@@ -73,13 +73,13 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: start;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 5rem;
     letter-spacing: 1px;
 }
 
 .i-flex-left p {
-    line-height: 2.4rem;
+    line-height: 2rem;
     font-weight: 300;
 }
 
@@ -119,7 +119,7 @@ export default {
 }
 
 .i-button p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0px;
 }
 
@@ -135,7 +135,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: start;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-left: 2rem;
         letter-spacing: 1px;
     }
