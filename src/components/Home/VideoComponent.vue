@@ -1,19 +1,19 @@
 <template>
     <div class="parent">
-        <img src="../../../public/assets/logo4.webp" class="islands" />
-        <video src="../../../public/assets/Portada_01.mp4" autoplay playsinline muted loop></video>
+        <img :src="getAssetPath('logo4.webp')" class="islands" />
+        <video :src="getAssetPath('Portada_01.mp4')" autoplay playsinline muted loop></video>
         <div class="h-text-container grotesk">
             <p class="h-text">"Do not seek to follow in the footsteps of the wise;
                 seek what they sought." <br><span class="italic"> <em>- Matsuo Basho</em></span>
             </p>
         </div>
-        <img src="../../../public/assets/logobig.webp" class="logo-big" />
+        <img :src="getAssetPath('logobig.webp')" class="logo-big" />
         <div class="logos-container">
             <div class="h-flex-left">
-                <img class="h-logo-sm2" src="../../../public/assets/ah2.webp" />
-                <img id="logo-small" class="h-logo-sm" src="../../../public/assets/generalitat.webp" />
-                <img class="h-logo-sm" src="../../../public/assets/logo2.webp" />
-                <img id="logo-small2" class="h-logo-sm2" src="../../../public/assets/logo5.webp" />
+                <img :src="getAssetPath('ah2.webp')" class="h-logo-sm2" />
+                <img :src="getAssetPath('generalitat.webp')" id="logo-small" class="h-logo-sm" />
+                <img :src="getAssetPath('logo2.webp')" class="h-logo-sm" />
+                <img :src="getAssetPath('logo5.webp')" id="logo-small2" class="h-logo-sm2" />
             </div>
             <div class="h-flex-right">
                 <p class="h-sub light">
@@ -27,7 +27,17 @@
 
 <script>
 export default {
-    name: 'VideoComponent'
+    name: 'VideoComponent',
+    data() {
+        return {
+            baseImagePath: process.env.VUE_APP_BASE_IMAGE_PATH
+        };
+    },
+    methods: {
+        getAssetPath(fileName) {
+            return `${this.baseImagePath}/${fileName}`;
+        }
+    }
 };
 </script>
 
@@ -41,7 +51,6 @@ export default {
     justify-content: center;
     z-index: 1;
 }
-
 
 video {
     height: 100vh;
@@ -129,7 +138,6 @@ video {
     flex: 1;
     justify-content: center;
     padding-right: 3rem;
-
 }
 
 .h-logo-sm {
@@ -145,7 +153,6 @@ video {
 
 .h-logo-sm3 {
     width: 9vw;
-
 }
 
 .logo {
@@ -174,9 +181,7 @@ video {
     width: 3rem;
 }
 
-
 @media (min-width: 1280px) and (max-width: 1440px) {
-
     .h-text-container {
         top: 65%;
     }
@@ -199,12 +204,10 @@ video {
         margin-left: 7rem;
         width: 2rem;
     }
-
 }
 
 @media (max-width: 700px) {
-
-    .h-text{
+    .h-text {
         font-size: 1rem;
     }
 }
@@ -219,7 +222,6 @@ video {
         width: 100vw;
         flex-direction: column;
         bottom: 8%;
-
     }
 
     .h-sub {
@@ -248,7 +250,6 @@ video {
         left: 1.5rem;
     }
 
-
     .h-logo-sm {
         width: 11vw;
         transform: scale(2.5);
@@ -265,40 +266,28 @@ video {
         width: 80%;
         justify-content: space-between;
     }
-
-
 }
 
-
-
 @media (min-width: 1900px) {
-
     .h-text-container {
         top: 80%;
-
     }
 
     .logo-big {
         transform: scale(1.2);
         max-width: 90%;
     }
-
 }
 
-
 @media (min-width: 1000px) and (max-width: 1500px) {
-
     .logos-container {
         width: 100vw;
-        gap: 5rem
+        gap: 5rem;
     }
-
-
 
     #logo-small2 {
         margin-left: 4rem;
         width: 2rem;
     }
-
 }
 </style>

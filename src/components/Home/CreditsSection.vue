@@ -18,16 +18,16 @@
         </div>
     </div>
     <div class="cr-logos">
-        <img src="../../../public/assets/ah.webp" class="cr-logo" />
-        <img src="../../../public/assets/logo1.webp" class="cr-logo" />
-        <img src="../../../public/assets/logo2.webp" class="cr-logo" />
-        <img src="../../../public/assets/h-logo.webp" class="cr-logo" />
+        <img :src="getAssetPath('ah.webp')" class="cr-logo" />
+        <img :src="getAssetPath('logo1.webp')" class="cr-logo" />
+        <img :src="getAssetPath('logo2.webp')" class="cr-logo" />
+        <img :src="getAssetPath('h-logo.webp')" class="cr-logo" />
     </div>
     <div class="cr-text-container-2 thin">
         <p class="cr-text-2">Subvencions per a projectes culturals que facin servir tecnologia immersiva </p>
     </div>
     <div class="cr-islands">
-        <img src="../../../public/assets/logo4.webp" class="cr-islands-logo" />
+        <img :src="getAssetPath('logo4.webp')" class="cr-islands-logo" />
     </div>
 </template>
 
@@ -47,7 +47,13 @@ export default {
                 { role: 'English and Japanese Voices', name: 'Satoshi Suzuki and Reiko Yamada' }
             ],
             specialThanks: 'Haptos Soundlab, Antic Teatre, Influx Festival, Josep M. Jordana, Carolina Mora, Reiko Yamada, Satoshi Suzuki, Enol Balado (Disseny sonor adicional, Sculpted Audio), Belén Berlín, Juliana Rabello and Paolo Carretero',
+            baseImagePath: process.env.VUE_APP_BASE_IMAGE_PATH
         };
+    },
+    methods: {
+        getAssetPath(fileName) {
+            return `${this.baseImagePath}/${fileName}`;
+        }
     }
 };
 </script>
@@ -130,7 +136,6 @@ export default {
 .cr-logo-container {
     margin-left: 5rem;
     text-transform: uppercase;
-    max-width: 90vw;
 }
 
 .cr-logos {
@@ -139,11 +144,11 @@ export default {
     justify-content: space-between;
     max-width: 70vw;
     margin-left: 5rem;
-    gap:3rem;
 }
 
 .cr-logo {
     object-fit: contain;
+    margin-right: 8rem;
     max-width: 25vw;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -162,14 +167,12 @@ export default {
     width: 15vw;
 }
 
-@media (max-width: 900px) {
-
+@media (max-width: 1268px) {
     .cr-main {
         height: auto;
         flex-direction: column;
         margin-left: 2rem;
         margin-right: 3rem;
-
     }
 
     .cr-logo-container {
@@ -195,7 +198,7 @@ export default {
     .cr-logos {
         display: flex;
         flex-wrap: wrap;
-        width: auto;
+        width: 100vw;
         margin-left: 2rem;
     }
 
@@ -208,13 +211,11 @@ export default {
     }
 
     .cr-islands-logo {
-        min-width: 25vw;
+        width: 35vw;
     }
 
     .cr-text-2 {
         margin-right: 1rem;
     }
-
-
 }
 </style>

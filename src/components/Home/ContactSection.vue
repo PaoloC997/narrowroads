@@ -1,22 +1,33 @@
 <template>
     <div class="c-main">
-        <div class="c-flex-left  grotesk">
+        <div class="c-flex-left grotesk">
             <h2 class="c-title light">CONTACT - BOOKING</h2>
             <p class="c-text">acousticheritagecollective@gmail.com</p>
-            <p class="c-text"> acousticheritagecollective.org</p>
+            <p class="c-text">acousticheritagecollective.org</p>
             <p class="c-text">filmfreeway.com/AcousticHeritageCollective</p>
         </div>
         <div class="c-flex-right">
-            <img class="c-logo" src="../../../public/assets/c-logo2.webp" />
+            <img :src="getAssetPath('c-logo2.webp')" class="c-logo" />
         </div>
     </div>
 </template>
-<script>
 
+<script>
 export default {
     name: 'ContactSection',
+    data() {
+        return {
+            baseImagePath: process.env.VUE_APP_BASE_IMAGE_PATH
+        };
+    },
+    methods: {
+        getAssetPath(fileName) {
+            return `${this.baseImagePath}/${fileName}`;
+        }
+    }
 };
 </script>
+
 <style>
 .c-main {
     height: auto;
@@ -38,7 +49,6 @@ export default {
     line-height: 2.4rem;
     font-weight: 300;
 }
-
 
 .c-title {
     margin-bottom: 2rem;
@@ -65,6 +75,4 @@ export default {
     font-size: 1.8rem;
     font-weight: lighter !important;
 }
-
-
 </style>
