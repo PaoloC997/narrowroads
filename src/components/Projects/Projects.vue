@@ -50,7 +50,7 @@ export default {
     scrollToProject(id) {
       nextTick(() => {
         setTimeout(() => {
-          const projectRef = this.$refs.projectComponents.find((project) => project.id === parseInt(id));
+          const projectRef = this.$refs.projectComponents.find((ref) => ref.id === parseInt(id));
           if (projectRef) {
             projectRef.scrollToTop({
               behavior: 'smooth',
