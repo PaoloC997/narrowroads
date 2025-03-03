@@ -169,7 +169,8 @@ video {
 }
 
 #logo-small2 {
-    margin-left: 7rem;
+    position: relative;
+    left: 1rem;
     width: 3rem;
 }
 
@@ -236,6 +237,10 @@ video {
         width: 50vw;
     }
 
+    #logo-small2 {
+        left: 1.5rem;
+    }
+
 
     .h-logo-sm {
         width: 11vw;
@@ -244,12 +249,14 @@ video {
     }
 
     .h-logo-sm2 {
-        width: 10vw;
-        transform: scale(1.5);
+        width: 7vw;
+        transform: scale(1.2);
     }
 
     .h-flex-left {
         padding-left: 1rem;
+        width: 80%;
+        justify-content: space-between;
     }
 
 
@@ -287,6 +294,4 @@ video {
     }
 
 }
-
-
 </style>

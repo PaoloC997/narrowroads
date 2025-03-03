@@ -46,7 +46,6 @@ export default {
     };
   },
   mounted() {
-    console.log('Base Image Path:', process.env.VUE_APP_BASE_IMAGE_PATH);
     this.scrollToTop();
   },
   methods: {

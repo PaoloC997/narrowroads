@@ -14,7 +14,6 @@
         <div class="cr-logo-container">
             <p class="cr-red">Special thanks to</p>
             <p class="cr-text-2">{{ specialThanks }}</p>
-
             <p class="cr-red">The project has been supported by</p>
         </div>
     </div>
