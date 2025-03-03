@@ -29,31 +29,36 @@ export default {
   components: { Project, Footer },
   data() {
     return {
-      projectData: projectInfo
+      projectData: projectInfo,
+      projectId: null 
     };
   },
   mounted() {
-    this.scrollToProject();
+    this.handleQueryParams(); 
   },
   watch: {
-    '$route.query.id': 'scrollToProject'
+    '$route.query.id': 'handleQueryParams'
   },
   methods: {
-    scrollToProject() {
-      const projectId = this.$route.query.id;
-      if (projectId) {
-        nextTick(() => {
-          setTimeout(() => {
-            const projectRef = this.$refs.projectComponents.find((project) => project.id === parseInt(projectId));
-            if (projectRef) {
-              projectRef.scrollToTop( {
-                behavior: 'smooth',
-                block: 'start'
-              });
-            } 
-          }, 30); 
-        });
+    handleQueryParams() {
+      const id = this.$route.query.id;
+      if (id) {
+        this.projectId = id;
+        this.scrollToProject(id);
       }
+    },
+    scrollToProject(id) {
+      nextTick(() => {
+        setTimeout(() => {
+          const projectRef = this.$refs.projectComponents.find((project) => project.id === parseInt(id));
+          if (projectRef) {
+            projectRef.scrollToTop({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }, 30); 
+      });
     }
   }
 };

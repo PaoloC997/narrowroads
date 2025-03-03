@@ -25,6 +25,7 @@ export default {
     flex-direction: row;
     background-color: #B41C28;
     position: relative;
+    padding-bottom: 2rem;
 }
 
 .c-flex-left {

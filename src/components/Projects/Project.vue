@@ -1,7 +1,7 @@
 <template>
   <div :class="id === 10 ? 'p-main' : 'p-main border'" ref="projectElement">
     <h2 class="p-title gray thin">{{ projectTitle }}</h2>
-    <img :src="`/assets/${imageSrc}`" class="p-image" />
+    <img :src="getImageSrc(imageSrc)" class="p-image" />
     <div class="p-text-container thin">
       <div class="p-flex-left">
         <p class="p-st">{{ type }}</p>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div v-if="thumbSrc !== ''" class="p-flex-right">
-        <img :id="id === 2 ? 'p-thumb-lg' : ''"  :src="`/assets/${thumbSrc}`" :class="id === 3 ? 'p-thumb-sm' : 'p-thumb'" />
+        <img :id="id === 2 ? 'p-thumb-lg' : ''" :src="getImageSrc(thumbSrc)" :class="id === 3 ? 'p-thumb-sm' : 'p-thumb'" />
       </div>
     </div>
   </div>
@@ -40,7 +40,13 @@ export default {
     type: String,
     texts: Array
   },
+  data() {
+    return {
+      baseImagePath: process.env.VUE_APP_BASE_IMAGE_PATH
+    };
+  },
   mounted() {
+    console.log('Base Image Path:', process.env.VUE_APP_BASE_IMAGE_PATH);
     this.scrollToTop();
   },
   methods: {
@@ -49,11 +55,15 @@ export default {
       if (element) {
         element.scrollIntoView({ block: 'start' });
       }
+    },
+    getImageSrc(src) {
+      return `${this.baseImagePath}/${src}`;
     }
   }
 };
 </script>
-<style>
+
+<style scoped>
 .p-main {
   display: flex;
   flex-direction: column;
@@ -62,7 +72,6 @@ export default {
   margin-left: auto;
   margin-right: auto;
   font-weight: 500;
-
 }
 
 .border {
@@ -114,7 +123,6 @@ export default {
   color: black;
   margin-bottom: 0.5rem;
   color: gray;
-
 }
 
 .p-thumb {
@@ -135,7 +143,7 @@ export default {
 
 .p-link {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
 .bar {
@@ -147,54 +155,52 @@ export default {
 }
 
 @media (max-width: 1200px) {
-    
   .p-text-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 3rem;
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
-  padding-bottom: 5rem;
-}
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+  }
 
-.p-flex-left {
-  flex: 1;
-  max-width: 90vw;
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-  align-items: start;
-  font-size: 2.5rem;
-}
+  .p-flex-left {
+    flex: 1;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: start;
+    font-size: 2.5rem;
+  }
 
-.p-flex-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-items: start;
-}
+  .p-flex-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+  }
 
-.p-thumb {
-  object-fit: cover;
-  width: 80vw;
-  margin-top: 5rem;
-}
+  .p-thumb {
+    object-fit: cover;
+    width: 80vw;
+    margin-top: 5rem;
+  }
 
-.p-thumb-sm{
-  object-fit: cover;
-  width: 48vw;
-  margin-top: 5rem;
-  margin-bottom: 0px;
-}
+  .p-thumb-sm {
+    object-fit: cover;
+    width: 48vw;
+    margin-top: 5rem;
+    margin-bottom: 0px;
+  }
 
-.p-title {
-  font-size: 3rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
+  .p-title {
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
 }
 </style>
