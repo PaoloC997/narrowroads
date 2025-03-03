@@ -104,7 +104,7 @@ export default {
 }
 
 .i-button {
-    width: 15vw;
+    min-width: 15vw;
     border: 1px solid #818181;
     padding-top: 1rem;
     padding-bottom: 1rem;

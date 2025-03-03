@@ -202,6 +202,13 @@ video {
 
 }
 
+@media (max-width: 700px) {
+
+    .h-text{
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 900px) {
     .logo-big {
         transform: scale(0.9);
@@ -216,8 +223,8 @@ video {
     }
 
     .h-sub {
-        margin-top: 1rem;
-        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
     }
 

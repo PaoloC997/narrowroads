@@ -4,13 +4,14 @@
             <p>ACOUSTIC HERITAGE COLLECTIVE</p>
         </div>
         <div class="f-flex-right">
-            <div class="f-flex-sm">
+            <div class="f-flex-sm-2">
                 <p class="gray">CONTACT</p>
             </div>
             <div class="f-flex-sm ml-5">
                 <p><a class="ft-link" href="mailto:acousticheritagecollective@gmail.com">EMAIL</a></p>
                 <p><a class="ft-link" href="mailto:patrimoniacustic@gmail.com">PATRIMONI ACUSTIC</a></p>
-                <p><a class="ft-link" href="https://twitter.com/acousticheritagecollective" target="_blank" rel="noopener noreferrer">TWITTER</a></p>
+                <p><a class="ft-link" href="https://twitter.com/acousticheritagecollective" target="_blank"
+                        rel="noopener noreferrer">TWITTER</a></p>
             </div>
         </div>
     </div>
@@ -52,10 +53,33 @@ export default {
 
 .ft-link {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 .ml-5 {
     margin-left: 7rem;
+}
+
+
+@media (max-width: 768px) {
+    .f-main {
+        flex-direction: column;
+
+    }
+
+    .f-flex-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .f-flex-sm-2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .f-flex-sm{
+        padding-left: 5rem;
+    }
+
 }
 </style>

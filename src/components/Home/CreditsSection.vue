@@ -130,19 +130,20 @@ export default {
 .cr-logo-container {
     margin-left: 5rem;
     text-transform: uppercase;
+    max-width: 90vw;
 }
 
 .cr-logos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70vw;
+    max-width: 70vw;
     margin-left: 5rem;
+    gap:3rem;
 }
 
 .cr-logo {
     object-fit: contain;
-    margin-right: 8rem;
     max-width: 25vw;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -161,7 +162,7 @@ export default {
     width: 15vw;
 }
 
-@media (max-width: 1268px) {
+@media (max-width: 900px) {
 
     .cr-main {
         height: auto;
@@ -194,7 +195,7 @@ export default {
     .cr-logos {
         display: flex;
         flex-wrap: wrap;
-        width: 100vw;
+        width: auto;
         margin-left: 2rem;
     }
 
@@ -207,7 +208,7 @@ export default {
     }
 
     .cr-islands-logo {
-        width: 35vw;
+        min-width: 25vw;
     }
 
     .cr-text-2 {
