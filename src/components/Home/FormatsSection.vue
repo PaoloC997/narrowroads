@@ -50,7 +50,7 @@
     },
     methods: {
       getImagePath(imageSrc) {
-        return `${process.env.VUE_APP_BASE_IMAGE_PATH}/${imageSrc}`;
+        return `${process.env.VUE_APP_BASE_IMAGE_PATH}/${imageSrc}`; //image path
       }
     }
   };
